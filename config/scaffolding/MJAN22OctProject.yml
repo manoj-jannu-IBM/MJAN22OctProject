@@ -7,3 +7,17 @@ packages:
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
+- name: WmSterlingB2B
+  gitServerName: SIQAGitHubShared
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
+services:
+- serviceName: project.mjan22oct.streaming.connections:EmbeddedMessaging
+  packages:
+  - name: MJAN22OctProject
+    version: "1.0"
+  - name: WmSterlingB2B
+    version: "1.6"
+  - name: WmAmazonS3Provider
+    version: 12.0.0.0.21
