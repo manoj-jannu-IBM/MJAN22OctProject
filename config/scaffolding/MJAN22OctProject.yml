@@ -22,6 +22,9 @@ packages:
 - name: WmSAPS4HANACloudV4Provider
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
+- name: WmODataProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: supported
 security:
 - name: WmSterlingB2B
   allowedServices:
