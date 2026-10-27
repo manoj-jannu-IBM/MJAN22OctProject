@@ -19,6 +19,9 @@ packages:
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
+- name: WmSAPS4HANACloudV4Provider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: supported
 security:
 - name: WmSterlingB2B
   allowedServices:
