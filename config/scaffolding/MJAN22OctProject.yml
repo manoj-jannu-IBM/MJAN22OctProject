@@ -8,11 +8,61 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: WmSterlingB2B
+  version: "1.6"
   gitServerName: SIQAGitHubShared
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
+security:
+- name: WmSterlingB2B
+  allowedServices:
+  - pub.flow:invokeService
+  javaServiceSetting: NONE
 services:
+- serviceName: project.mjan22oct.integrations:safe
+  packages:
+  - name: MJAN22OctProject
+    version: "1.0"
+  - name: WmSterlingB2B
+    version: "1.6"
+  - name: WmAmazonS3Provider
+    version: 12.0.0.0.21
+- serviceName: wm.sterling.b2b.pub:finish
+  packages:
+  - name: WmSterlingB2B
+    version: "1.6"
+  - name: WmAmazonS3Provider
+    version: 12.0.0.0.21
+- serviceName: pub.json:documentToJSON
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1315
+- serviceName: pub.string:stringToBytes
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1315
+- serviceName: pub.string:base64Encode
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1315
+- serviceName: wm.sterling.b2b.priv.outbound_.connectors:dropOffToOrchestrator
+  packages:
+  - name: WmSterlingB2B
+    version: "1.6"
+  - name: WmAmazonS3Provider
+    version: 12.0.0.0.21
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1315
+- serviceName: pub.client:http
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1315
+- serviceName: wm.server.openapi:invoke
+  packages:
+  - name: WmRoot
+    version: 12.1.0.0.1315
 - serviceName: project.mjan22oct.streaming.connections:EmbeddedMessaging
   packages:
   - name: MJAN22OctProject
