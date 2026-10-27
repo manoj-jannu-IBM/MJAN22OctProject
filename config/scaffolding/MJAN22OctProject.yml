@@ -20,9 +20,11 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: WmSAPS4HANACloudV4Provider
+  version: 12.0.0.0.8
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 - name: WmODataProvider
+  version: 12.0.0.0.13
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 security:
@@ -39,8 +41,12 @@ services:
     version: "1.6"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: WmSAPS4HANACloudV4Provider
+    version: 12.0.0.0.8
   - name: WmAmazonS3Provider
     version: 12.0.0.0.21
+  - name: WmODataProvider
+    version: 12.0.0.0.13
 - serviceName: pub.alert:emit
   packages:
   - name: WmPublic
@@ -53,9 +59,31 @@ services:
     version: "1.6"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: WmSAPS4HANACloudV4Provider
+    version: 12.0.0.0.8
   - name: WmAmazonS3Provider
     version: 12.0.0.0.21
+  - name: WmODataProvider
+    version: 12.0.0.0.13
 - serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1315
+- serviceName: project.mjan22oct.integrations:ifelse
+  packages:
+  - name: MJAN22OctProject
+    version: "1.0"
+  - name: WmSterlingB2B
+    version: "1.6"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: WmSAPS4HANACloudV4Provider
+    version: 12.0.0.0.8
+  - name: WmAmazonS3Provider
+    version: 12.0.0.0.21
+  - name: WmODataProvider
+    version: 12.0.0.0.13
+- serviceName: pub.string:toUpper
   packages:
   - name: WmPublic
     version: 12.1.0.0.1315
@@ -67,8 +95,12 @@ services:
     version: "1.6"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: WmSAPS4HANACloudV4Provider
+    version: 12.0.0.0.8
   - name: WmAmazonS3Provider
     version: 12.0.0.0.21
+  - name: WmODataProvider
+    version: 12.0.0.0.13
 - serviceName: wm.sterling.b2b.pub:finish
   packages:
   - name: WmSterlingB2B
