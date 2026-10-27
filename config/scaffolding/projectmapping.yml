@@ -1,0 +1,7 @@
+version: "1.0"
+projectName: MJAN22OctProject
+runtimes:
+- runtimeAlias: kvv_2710
+  assets:
+  - name: MJAN22OctProject.project.mjan22oct.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1
+    type: connection
