@@ -24,6 +24,7 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: WmODataProvider
@@ -36,24 +37,6 @@ security:
   - pub.flow:invokeService
   javaServiceSetting: NONE
 services:
-- serviceName: project.mjan22oct.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
-  packages:
-  - name: MJAN22OctProject
-    version: "1.0"
-  - name: WmSterlingB2B
-    version: "1.6"
-  - name: DADA_GlobalVariable1
-    version: "1.0"
-  - name: WmSAPS4HANACloudV4Provider
-    version: 12.0.0.0.8
-  - name: WmAmazonS3Provider
-    version: 12.0.0.0.21
-  - name: WmODataProvider
-    version: 12.0.0.0.13
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
 - serviceName: project.mjan22oct.integrations:Copy_alerts
   packages:
   - name: MJAN22OctProject
@@ -66,12 +49,12 @@ services:
     version: 12.0.0.0.8
   - name: WmAmazonS3Provider
     version: 12.0.0.0.21
-  - name: WmODataProvider
-    version: 12.0.0.0.13
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmODataProvider
+    version: 12.0.0.0.13
 - serviceName: pub.alert:emit
   packages:
   - name: WmPublic
@@ -88,12 +71,12 @@ services:
     version: 12.0.0.0.8
   - name: WmAmazonS3Provider
     version: 12.0.0.0.21
-  - name: WmODataProvider
-    version: 12.0.0.0.13
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmODataProvider
+    version: 12.0.0.0.13
 - serviceName: pub.flow:debugLog
   packages:
   - name: WmPublic
@@ -110,16 +93,34 @@ services:
     version: 12.0.0.0.8
   - name: WmAmazonS3Provider
     version: 12.0.0.0.21
-  - name: WmODataProvider
-    version: 12.0.0.0.13
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmODataProvider
+    version: 12.0.0.0.13
 - serviceName: pub.string:toUpper
   packages:
   - name: WmPublic
     version: 12.1.0.0.1315
+- serviceName: project.mjan22oct.integrations:sad
+  packages:
+  - name: MJAN22OctProject
+    version: "1.0"
+  - name: WmSterlingB2B
+    version: "1.6"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: WmSAPS4HANACloudV4Provider
+    version: 12.0.0.0.8
+  - name: WmAmazonS3Provider
+    version: 12.0.0.0.21
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmODataProvider
+    version: 12.0.0.0.13
 - serviceName: project.mjan22oct.integrations:safe
   packages:
   - name: MJAN22OctProject
@@ -132,12 +133,12 @@ services:
     version: 12.0.0.0.8
   - name: WmAmazonS3Provider
     version: 12.0.0.0.21
-  - name: WmODataProvider
-    version: 12.0.0.0.13
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmODataProvider
+    version: 12.0.0.0.13
 - serviceName: wm.sterling.b2b.pub:finish
   packages:
   - name: WmSterlingB2B
