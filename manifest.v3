@@ -13,19 +13,19 @@
     <value name="WmSterlingB2B">1.6</value>
     <value name="DADA_GlobalVariable1">1.0</value>
     <value name="WmSAPS4HANACloudV4Provider">12.0.0.0.8</value>
-    <value name="WmODataProvider">12.0.0.0.13</value>
     <value name="WmJDBCAdapter">10.3.0.0.34</value>
+    <value name="WmODataProvider">12.0.0.0.13</value>
   </record>
   <null name="lazy_load_node_types"/>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">17</value>
+  <value name="build">18</value>
   <null name="description"/>
   <value name="created_date">22-10-2026 07:33:44 GMT</value>
   <null name="extendedProperties"/>
   <value name="target_server_version">12.1.0.0</value>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-10-27T14:51:00.676753465Z</value>
+  <value name="lastUpdated">2026-10-27T14:52:28.41646506Z</value>
   <value name="creator">Abhishek Kumar</value>
 </Values>
