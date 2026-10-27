@@ -13,6 +13,11 @@ packages:
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
+- name: DADA_GlobalVariable1
+  gitServerName: SIQAGitHubShared
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
 security:
 - name: WmSterlingB2B
   allowedServices:
@@ -25,6 +30,8 @@ services:
     version: "1.0"
   - name: WmSterlingB2B
     version: "1.6"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
   - name: WmAmazonS3Provider
     version: 12.0.0.0.21
 - serviceName: wm.sterling.b2b.pub:finish
@@ -69,5 +76,7 @@ services:
     version: "1.0"
   - name: WmSterlingB2B
     version: "1.6"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
   - name: WmAmazonS3Provider
     version: 12.0.0.0.21
