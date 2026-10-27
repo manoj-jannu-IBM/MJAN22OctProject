@@ -14,6 +14,7 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: DADA_GlobalVariable1
+  version: "1.0"
   gitServerName: SIQAGitHubShared
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
@@ -24,6 +25,34 @@ security:
   - pub.flow:invokeService
   javaServiceSetting: NONE
 services:
+- serviceName: project.mjan22oct.integrations:Copy_alerts
+  packages:
+  - name: MJAN22OctProject
+    version: "1.0"
+  - name: WmSterlingB2B
+    version: "1.6"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: WmAmazonS3Provider
+    version: 12.0.0.0.21
+- serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1315
+- serviceName: project.mjan22oct.integrations:debugLog
+  packages:
+  - name: MJAN22OctProject
+    version: "1.0"
+  - name: WmSterlingB2B
+    version: "1.6"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: WmAmazonS3Provider
+    version: 12.0.0.0.21
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1315
 - serviceName: project.mjan22oct.integrations:safe
   packages:
   - name: MJAN22OctProject
@@ -58,10 +87,6 @@ services:
     version: "1.6"
   - name: WmAmazonS3Provider
     version: 12.0.0.0.21
-- serviceName: pub.flow:debugLog
-  packages:
-  - name: WmPublic
-    version: 12.1.0.0.1315
 - serviceName: pub.client:http
   packages:
   - name: WmPublic
@@ -70,13 +95,3 @@ services:
   packages:
   - name: WmRoot
     version: 12.1.0.0.1315
-- serviceName: project.mjan22oct.streaming.connections:EmbeddedMessaging
-  packages:
-  - name: MJAN22OctProject
-    version: "1.0"
-  - name: WmSterlingB2B
-    version: "1.6"
-  - name: DADA_GlobalVariable1
-    version: "1.0"
-  - name: WmAmazonS3Provider
-    version: 12.0.0.0.21
